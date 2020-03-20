@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SomeImageCropper'
-  s.version = '0.0.3'
+  s.version = '0.0.4'
   s.license = 'MIT'
   s.summary = 'Make selection on image and crop this selection'
   s.homepage = 'https://github.com/smakeev/SomeImageCropper'
@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
 
   s.swift_versions = ['5.1']
 
-  s.source_files = 'SomeImageCropper/SomeImageCropper/*.swift'
+  s.source_files = 'SomeImageCropper/SomeImageCropper/*.{h,m,swift}'
 end
