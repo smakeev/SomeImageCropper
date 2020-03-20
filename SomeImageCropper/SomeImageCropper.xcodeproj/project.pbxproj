@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C36FD69862449040F5B948C /* libPods-SomeImageCropper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0DF056FF224CD11CA2291A /* libPods-SomeImageCropper.a */; };
 		B6764C56242563B50070F012 /* SomeImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = B6764C54242563B50070F012 /* SomeImageCropper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6764CBD242566520070F012 /* CropperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6764CBC242566520070F012 /* CropperView.swift */; };
+		B6764CC0242571950070F012 /* CropperEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = B6764CBE242571950070F012 /* CropperEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6764CC1242571950070F012 /* CropperEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B6764CBF242571950070F012 /* CropperEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9034132F15032C5196E45E13 /* Pods-SomeImageCropper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomeImageCropper.release.xcconfig"; path = "Target Support Files/Pods-SomeImageCropper/Pods-SomeImageCropper.release.xcconfig"; sourceTree = "<group>"; };
 		B6764C51242563B50070F012 /* SomeImageCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SomeImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6764C54242563B50070F012 /* SomeImageCropper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeImageCropper.h; sourceTree = "<group>"; };
 		B6764C55242563B50070F012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6764CBC242566520070F012 /* CropperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropperView.swift; sourceTree = "<group>"; };
+		B6764CBE242571950070F012 /* CropperEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CropperEngine.h; sourceTree = "<group>"; };
+		B6764CBF242571950070F012 /* CropperEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CropperEngine.m; sourceTree = "<group>"; };
+		BB3CABA9A2C6921F5EADA1DE /* Pods-SomeImageCropper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SomeImageCropper.debug.xcconfig"; path = "Target Support Files/Pods-SomeImageCropper/Pods-SomeImageCropper.debug.xcconfig"; sourceTree = "<group>"; };
+		EE0DF056FF224CD11CA2291A /* libPods-SomeImageCropper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SomeImageCropper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C36FD69862449040F5B948C /* libPods-SomeImageCropper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51785ECC759AC5C8B91A52CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB3CABA9A2C6921F5EADA1DE /* Pods-SomeImageCropper.debug.xcconfig */,
+				9034132F15032C5196E45E13 /* Pods-SomeImageCropper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A9BB91170774CD431F79AF1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE0DF056FF224CD11CA2291A /* libPods-SomeImageCropper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6764C47242563B50070F012 = {
 			isa = PBXGroup;
 			children = (
 				B6764C53242563B50070F012 /* SomeImageCropper */,
 				B6764C52242563B50070F012 /* Products */,
+				51785ECC759AC5C8B91A52CF /* Pods */,
+				A9BB91170774CD431F79AF1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +79,8 @@
 				B6764C54242563B50070F012 /* SomeImageCropper.h */,
 				B6764C55242563B50070F012 /* Info.plist */,
 				B6764CBC242566520070F012 /* CropperView.swift */,
+				B6764CBE242571950070F012 /* CropperEngine.h */,
+				B6764CBF242571950070F012 /* CropperEngine.m */,
 			);
 			path = SomeImageCropper;
 			sourceTree = "<group>";
@@ -62,6 +92,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6764CC0242571950070F012 /* CropperEngine.h in Headers */,
 				B6764C56242563B50070F012 /* SomeImageCropper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +104,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6764C59242563B50070F012 /* Build configuration list for PBXNativeTarget "SomeImageCropper" */;
 			buildPhases = (
+				0D361D703D17F49442CADF11 /* [CP] Check Pods Manifest.lock */,
 				B6764C4C242563B50070F012 /* Headers */,
 				B6764C4D242563B50070F012 /* Sources */,
 				B6764C4E242563B50070F012 /* Frameworks */,
@@ -130,12 +162,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D361D703D17F49442CADF11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SomeImageCropper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6764C4D242563B50070F012 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B6764CBD242566520070F012 /* CropperView.swift in Sources */,
+				B6764CC1242571950070F012 /* CropperEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +322,7 @@
 		};
 		B6764C5A242563B50070F012 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB3CABA9A2C6921F5EADA1DE /* Pods-SomeImageCropper.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -282,6 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.someprojects.SomeImageCropper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,6 +350,7 @@
 		};
 		B6764C5B242563B50070F012 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9034132F15032C5196E45E13 /* Pods-SomeImageCropper.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +369,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.someprojects.SomeImageCropper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

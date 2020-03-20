@@ -1,0 +1,16 @@
+PODS:
+  - SomeInnerView (1.0.2)
+
+DEPENDENCIES:
+  - SomeInnerView
+
+SPEC REPOS:
+  trunk:
+    - SomeInnerView
+
+SPEC CHECKSUMS:
+  SomeInnerView: 58d4f9747cc85fc5d2f9252376d2fcbec12db44f
+
+PODFILE CHECKSUM: 3f03be5ebcf26c7c5b1b9fdb84de3c40ecbc7627
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,4 @@
+target 'Example'
+
+pod "SomeImageCropper"
+

@@ -1,0 +1,6 @@
+module SomeImageCropper {
+  umbrella header "SomeImageCropper-umbrella.h"
+
+  export *
+  module * { export * }
+}

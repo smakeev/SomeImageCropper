@@ -1,0 +1,20 @@
+PODS:
+  - SomeImageCropper (0.0.2):
+    - SomeInnerView
+  - SomeInnerView (1.0.2)
+
+DEPENDENCIES:
+  - SomeImageCropper
+
+SPEC REPOS:
+  trunk:
+    - SomeImageCropper
+    - SomeInnerView
+
+SPEC CHECKSUMS:
+  SomeImageCropper: 3ec722cb250cec80a6211d36103498ab6a88b221
+  SomeInnerView: 58d4f9747cc85fc5d2f9252376d2fcbec12db44f
+
+PODFILE CHECKSUM: 63381010b0c86c57eb9c5d9437b509bc5ab66038
+
+COCOAPODS: 1.9.1
