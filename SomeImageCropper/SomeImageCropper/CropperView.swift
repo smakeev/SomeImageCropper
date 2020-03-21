@@ -107,10 +107,10 @@ public class CropperView: UIView {
 	
 	@objc
 	private func onTap(_ sender: UITapGestureRecognizer) {
-		guard let view = sender.view else {return}
-		let translation = sender.location(in: view)
-		selectorView.background.center = translation
-		selectorView.changeSelectionFrame(to: selectorView.background.frame)
+		let translation = sender.location(in: selectorView.selectionView.superview)
+		selectorView.selectionView.center = translation
+		print(translation)
+		selectorView.changeSelectionFrame(to: selectorView.selectionView.frame)
 	}
 	
 	public func reset() {
