@@ -16,6 +16,7 @@ class CropViewController: UIViewController {
 	var image: UIImage? = nil {
 		didSet {
 			cropper.sourceImage = image
+			cropper.reset()
 		}
 	}
 	
