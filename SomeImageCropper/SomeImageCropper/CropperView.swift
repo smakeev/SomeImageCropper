@@ -29,6 +29,13 @@ public class CropperView: UIView {
 			selectorView.secondaryImage = _sourceImage
 		}
 	}
+	
+	public var selectionIsFixed: Bool = true {
+		didSet {
+			selectorView.isSelectionFixed = selectionIsFixed
+		}
+	}
+	
 	private var engine: CropperEngine!
 	private var cropDone: ((UIImage?) -> Void)? = nil
 	private var selectorView: InnerView!
@@ -85,7 +92,14 @@ public class CropperView: UIView {
 		self.clipsToBounds = true
 	}
 	
-	public func crop(with handler: ((UIImage?) -> Void)? = nil) -> Bool {
+	public func reset() {
+		selectorView.x = 0.25
+		selectorView.y = 0.25
+		selectorView.bottom = 0.75
+		selectorView.right  = 0.75
+	}
+	
+	@discardableResult public func crop(with handler: ((UIImage?) -> Void)? = nil) -> Bool {
 		guard !inProgress else { return false }
 		if handler != nil {
 			cropDone = handler
@@ -99,9 +113,10 @@ public class CropperView: UIView {
 							y: selectorView.y,
 							width: selectorView.right - selectorView.x,
 							height: selectorView.bottom - selectorView.y)
+			let scale = Double(selectorView.zoom)
 			DispatchQueue.global().async { [weak self] in
 				guard let validSelf = self else { return }
-				let result = validSelf.engine.doCrop(for: source, rect: rect, scale: 1.0)
+				let result = validSelf.engine.doCrop(for: source, rect: rect, scale: NSNumber(floatLiteral: scale))
 				DispatchQueue.main.async {
 					resultProvider(result)
 					validSelf.inProgress = false

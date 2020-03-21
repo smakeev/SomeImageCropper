@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CropperEngine.h"
+#import <SomeImageCropper/CropperEngine.h>
+
 //! Project version number for SomeImageCropper.
 FOUNDATION_EXPORT double SomeImageCropperVersionNumber;
 
