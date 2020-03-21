@@ -12,6 +12,14 @@ import SomeInnerView
 
 public class CropperView: UIView {
 	
+	public var selectionView: UIView {
+		selectorView.selectionView
+	}
+	
+	public var backgroundView: UIView {
+		selectorView.background
+	}
+	
 	private var _sourceImage: UIImage? = nil
 	public var sourceImage: UIImage? {
 		get {
@@ -90,6 +98,19 @@ public class CropperView: UIView {
 		selectorView.selectionView.isUserInteractionEnabled = true
 		
 		self.clipsToBounds = true
+		
+		//add tap to move selection center
+		let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(onTap(_:)))
+		selectorView.background.addGestureRecognizer(tapGesture)
+		
+	}
+	
+	@objc
+	private func onTap(_ sender: UITapGestureRecognizer) {
+		guard let view = sender.view else {return}
+		let translation = sender.location(in: view)
+		selectorView.background.center = translation
+		selectorView.changeSelectionFrame(to: selectorView.background.frame)
 	}
 	
 	public func reset() {
