@@ -123,7 +123,6 @@ public class CropperView: UIView {
 	private func onTap(_ sender: UITapGestureRecognizer) {
 		let translation = sender.location(in: selectorView.selectionView.superview)
 		selectorView.selectionView.center = translation
-		print(translation)
 		selectorView.changeSelectionFrame(to: selectorView.selectionView.frame)
 	}
 	
