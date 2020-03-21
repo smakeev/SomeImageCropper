@@ -1,5 +1,5 @@
 PODS:
-  - SomeInnerView (1.0.2)
+  - SomeInnerView (1.0.3)
 
 DEPENDENCIES:
   - SomeInnerView
@@ -9,7 +9,7 @@ SPEC REPOS:
     - SomeInnerView
 
 SPEC CHECKSUMS:
-  SomeInnerView: 58d4f9747cc85fc5d2f9252376d2fcbec12db44f
+  SomeInnerView: eb05e49a8ca255d1cb7176f67f9972b66678d1d9
 
 PODFILE CHECKSUM: 3f03be5ebcf26c7c5b1b9fdb84de3c40ecbc7627
 
