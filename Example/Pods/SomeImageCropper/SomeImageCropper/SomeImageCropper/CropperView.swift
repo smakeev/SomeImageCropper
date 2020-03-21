@@ -44,6 +44,20 @@ public class CropperView: UIView {
 		}
 	}
 	
+	public private(set) var tapGesture: UITapGestureRecognizer!
+	public var doubleTapRecognizer:        UITapGestureRecognizer {
+		selectorView.doubleTapRecognizer
+	}
+	
+	public var dragRecognizerInSelection:  UIPanGestureRecognizer {
+		selectorView.dragRecognizerInSelection
+	}
+	
+	public var scaleRecognizerInSelection: UIPinchGestureRecognizer {
+		selectorView.scaleRecognizerInSelection
+	}
+	
+	
 	private var engine: CropperEngine!
 	private var cropDone: ((UIImage?) -> Void)? = nil
 	private var selectorView: InnerView!
@@ -100,14 +114,13 @@ public class CropperView: UIView {
 		self.clipsToBounds = true
 		
 		//add tap to move selection center
-		let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(onTap(_:)))
+		tapGesture = UITapGestureRecognizer(target: self, action: #selector(onTap(_:)))
 		selectorView.background.addGestureRecognizer(tapGesture)
-		
+		tapGesture.require(toFail: selectorView.doubleTapRecognizer)
 	}
 	
 	@objc
 	private func onTap(_ sender: UITapGestureRecognizer) {
-		guard let view = sender.view else {return}
 		let translation = sender.location(in: selectorView.selectionView.superview)
 		selectorView.selectionView.center = translation
 		print(translation)
