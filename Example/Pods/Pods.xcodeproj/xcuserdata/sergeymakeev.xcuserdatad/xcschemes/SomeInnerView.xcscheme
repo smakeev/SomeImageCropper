@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13439A472E67E77F67AFCB27CF5E3097"
-               BuildableName = "libSomeInnerView.a"
+               BuildableName = "SomeInnerView.framework"
                BlueprintName = "SomeInnerView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

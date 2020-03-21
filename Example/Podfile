@@ -1,4 +1,4 @@
 target 'Example'
-
+use_frameworks!
 pod "SomeImageCropper"
 

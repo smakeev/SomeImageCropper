@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "700ABB1EBE29FCF1684D032CF20AD414"
-               BuildableName = "libSomeImageCropper.a"
+               BuildableName = "SomeImageCropper.framework"
                BlueprintName = "SomeImageCropper"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7C36FD69862449040F5B948C /* libPods-SomeImageCropper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0DF056FF224CD11CA2291A /* libPods-SomeImageCropper.a */; };
 		B6764C56242563B50070F012 /* SomeImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = B6764C54242563B50070F012 /* SomeImageCropper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6764CBD242566520070F012 /* CropperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6764CBC242566520070F012 /* CropperView.swift */; };
+		B6764CBD242566520070F012 /* CropperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6764CBC242566520070F012 /* CropperView.swift */; platformFilter = ios; };
 		B6764CC0242571950070F012 /* CropperEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = B6764CBE242571950070F012 /* CropperEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6764CC1242571950070F012 /* CropperEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B6764CBF242571950070F012 /* CropperEngine.m */; };
+		B6764CC1242571950070F012 /* CropperEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B6764CBF242571950070F012 /* CropperEngine.m */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */

@@ -1,5 +1,5 @@
 PODS:
-  - SomeImageCropper (0.0.2):
+  - SomeImageCropper (0.0.4):
     - SomeInnerView
   - SomeInnerView (1.0.2)
 
@@ -12,9 +12,9 @@ SPEC REPOS:
     - SomeInnerView
 
 SPEC CHECKSUMS:
-  SomeImageCropper: 3ec722cb250cec80a6211d36103498ab6a88b221
+  SomeImageCropper: f611d9ba5f79b830a5338bfd55d53679ffbd2ed5
   SomeInnerView: 58d4f9747cc85fc5d2f9252376d2fcbec12db44f
 
-PODFILE CHECKSUM: 63381010b0c86c57eb9c5d9437b509bc5ab66038
+PODFILE CHECKSUM: c9a2902aca7650899643efda5ead1fb70fdd9733
 
 COCOAPODS: 1.9.1

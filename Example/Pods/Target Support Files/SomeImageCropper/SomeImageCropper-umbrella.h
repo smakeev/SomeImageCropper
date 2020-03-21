@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "CropperEngine.h"
+#import "SomeImageCropper.h"
 
 FOUNDATION_EXPORT double SomeImageCropperVersionNumber;
 FOUNDATION_EXPORT const unsigned char SomeImageCropperVersionString[];

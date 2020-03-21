@@ -1,4 +1,4 @@
-module SomeImageCropper {
+framework module SomeImageCropper {
   umbrella header "SomeImageCropper-umbrella.h"
 
   export *

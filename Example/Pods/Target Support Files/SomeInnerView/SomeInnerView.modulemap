@@ -1,4 +1,4 @@
-module SomeInnerView {
+framework module SomeInnerView {
   umbrella header "SomeInnerView-umbrella.h"
 
   export *
